@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+# Install fish shell
+sudo apt install fish -y
+
 #!/usr/bin/env fish
 
 #Oh my fish - Themes for fish shell
@@ -31,7 +35,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Ripgrep (rg)
 echo -e "\nInstalling ripgrep (rg)"
-sudo apt install ripgrep
+sudo apt install ripgrep -y
 
 # Neovim
 echo -e "\nInstalling Neovim"
@@ -43,13 +47,13 @@ rm -rf nvim-linux64.deb
 
 
 echo -e "\nNeovim Setup"
-sudo apt install pynvim
+sudo apt install pynvim -y
 cd ~/.config/
 git clone https://github.com/Yesid-Rodelo/nvim.git
 
 # tmux and settings
 echo -e "\nInstalling tmux and configs"
-sudo apt install tmux
+sudo apt install tmux -y
 cd ~
 touch .tmux.conf  
 echo 'set-option -g default-shell /bin/fish' > .tmux.conf && echo 'set-option -g escape-time 10' >> .tmux.conf && echo 'set -g mouse on' >> .tmux.conf
