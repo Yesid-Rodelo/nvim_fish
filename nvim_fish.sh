@@ -5,7 +5,7 @@ sudo apt install fish -y
 #!/usr/bin/env fish
 
 #Oh my fish - Themes for fish shell
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
 omf install bobthefish
 
 #fisher (plugin to fish)
