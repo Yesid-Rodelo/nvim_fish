@@ -3,12 +3,9 @@
 sudo apt install fish -y
 
 #Oh my fish - Themes for fish shell
-wget https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 #!/usr/bin/env fish
-
-omf install bobthefish
-
 #fisher (plugin to fish)
 echo -e "\nInstalling fisher"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -21,9 +18,6 @@ fisher install jorgebucaran/nvm.fish
 # Install nodejs
 echo -e "\nInstalling Nodejs"
 nvm install v16.15.0
-
-
-#!/usr/bin/env bash
 
 # Settings to fish shell
 cd ~/.config/fish
@@ -48,6 +42,7 @@ rm -rf nvim-linux64.deb
 
 
 echo -e "\nNeovim Setup"
+sudo apt install python3-pip
 sudo apt install pynvim -y
 cd ~/.config/
 git clone https://github.com/Yesid-Rodelo/nvim.git
