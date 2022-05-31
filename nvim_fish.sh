@@ -1,11 +1,13 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 # Install fish shell
+echo -e "\nInstalling Fish shell"
 sudo apt install fish -y
 
 #Oh my fish - Themes for fish shell
+echo -e "\nInstalling Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
-#!/usr/bin/env fish
+#!/usr/bin/fish
 #fisher (plugin to fish)
 echo -e "\nInstalling fisher"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -52,4 +54,4 @@ echo -e "\nInstalling tmux and configs"
 sudo apt install tmux -y
 cd ~
 touch .tmux.conf  
-echo 'set-option -g default-shell /bin/fish' > .tmux.conf && echo 'set-option -g escape-time 10' >> .tmux.conf && echo 'set -g mouse on' >> .tmux.conf
+echo 'set-option -g default-shell /bin/fish' > .tmux.conf && echo 'set-option -g escape-time 10' >> .tmux.conf
