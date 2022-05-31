@@ -1,17 +1,12 @@
-#!/usr/bin/bash
-# Install fish shell
-echo -e "\nInstalling Fish shell"
-sudo apt install fish -y
+#!/usr/bin/env fish
 
 #Oh my fish - Themes for fish shell
 echo -e "\nInstalling Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
-#!/usr/bin/fish
 #fisher (plugin to fish)
 echo -e "\nInstalling fisher"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-
 
 # Install nvm with fisher
 echo -e "\nInstalling nvm"
@@ -36,7 +31,6 @@ sudo apt install ripgrep -y
 
 # Neovim
 echo -e "\nInstalling Neovim"
-
 cd ~
 wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
@@ -45,9 +39,9 @@ rm -rf nvim-linux64.deb
 
 echo -e "\nNeovim Setup"
 sudo apt install python3-pip
-pip install pynvim
 cd ~/.config/
 git clone https://github.com/Yesid-Rodelo/nvim.git
+pip install pynvim
 
 # tmux and settings
 echo -e "\nInstalling tmux and configs"
