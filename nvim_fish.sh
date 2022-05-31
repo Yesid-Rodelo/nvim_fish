@@ -48,7 +48,7 @@ rm -rf nvim-linux64.deb
 
 echo -e "\nNeovim Setup"
 sudo apt install python3-pip
-sudo apt install pynvim -y
+pip install pynvim -y
 cd ~/.config/
 git clone https://github.com/Yesid-Rodelo/nvim.git
 
