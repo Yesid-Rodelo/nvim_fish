@@ -2,10 +2,11 @@
 # Install fish shell
 sudo apt install fish -y
 
+#Oh my fish - Themes for fish shell
+wget https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
+
 #!/usr/bin/env fish
 
-#Oh my fish - Themes for fish shell
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
 omf install bobthefish
 
 #fisher (plugin to fish)
