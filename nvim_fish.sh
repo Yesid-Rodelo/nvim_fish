@@ -8,9 +8,6 @@ echo -e "\nInstalling Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 #!/usr/bin/fish
-
-omf install bobthefish
-
 #fisher (plugin to fish)
 echo -e "\nInstalling fisher"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -48,7 +45,7 @@ rm -rf nvim-linux64.deb
 
 echo -e "\nNeovim Setup"
 sudo apt install python3-pip
-pip install pynvim -y
+pip install pynvim
 cd ~/.config/
 git clone https://github.com/Yesid-Rodelo/nvim.git
 
