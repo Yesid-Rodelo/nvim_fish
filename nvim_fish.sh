@@ -3,6 +3,7 @@
 #Oh my fish - Themes for fish shell
 echo -e "\nInstalling Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
 omf install bobthefish
 
 #fisher (plugin to fish)
