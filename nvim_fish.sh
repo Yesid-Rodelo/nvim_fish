@@ -3,6 +3,7 @@
 #Oh my fish - Themes for fish shell
 echo -e "\nInstalling Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf install bobthefish
 
 #fisher (plugin to fish)
 echo -e "\nInstalling fisher"
@@ -18,7 +19,8 @@ nvm install v16.15.0
 
 # Settings to fish shell
 cd ~/.config/fish
-echo 'set -g theme_color_scheme nord' > config.fish && echo 'set -Ua fish_user_path $Home/.local/share/nvm/v16.15.0/bin/node' >> config.fish
+echo 'set -g theme_color_scheme nord' > config.fish
+set -Ua fish_user_paths ~/.local/share/nvm/v16.15.0/bin
 
 # Vim plug
 echo -e "\nInstalling VimPlug"
